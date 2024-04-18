@@ -1,0 +1,502 @@
+/* Reset de margens, preenchimento e comportamento de caixa para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral para o corpo da página */
+body {
+background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(227,235,236,1) 100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Estilos para o logotipo no cabeçalho de navegação */
+
+nav .logo {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;   
+    
+    padding: 10px;
+    font-size: 45px;
+    font-style: italic;
+    font-weight: bold;
+    color: #fff;
+    background: rgb(64,59,59);
+background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+/* Animação para o logotipo no cabeçalho de navegação */
+nav .logo span {
+    animation: flipLogo 2s;
+    transition: 0.5s;
+    text-align: center;
+}
+
+/* Efeito de escala ao passar o mouse sobre o logotipo */
+nav .logo span:hover {
+    transform: scale(1.2);
+}
+
+/* Definição da animação de rotação do logotipo */
+@keyframes flipLogo {
+    from {
+        transform: rotateX(90deg);
+    }
+    to {
+        transform: rotateX(0deg);
+    }
+}
+
+/* Estilos para a lista de links no cabeçalho de navegação */
+nav ul {
+    list-style: none;
+    background: rgb(64,59,59);
+background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Estilos para cada link na lista */
+nav ul li a {
+    padding: 5px 20px;
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+    transition: 0.6s;
+}
+
+/* Efeito de cor ao passar o mouse sobre os links */
+nav ul li a:hover {
+    background: rgb(64,59,59);
+background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+}
+
+#submenu
+{
+   display: flex;
+   text-align: center;
+   -ms-flex-align: center;
+   flex-direction: column;
+   justify-content: space-evenly;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   color: #fff;
+  height: 400px;
+ 
+}
+.faleconoscobotao {
+border-radius: 10px;
+width: 150px;
+height: 50px;
+    color: rgb(255, 255, 255);
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,0,1) 35%, rgba(227,235,236,1) 100%);
+    
+}
+.elementos {
+   
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    
+}
+.logotipo {
+    width: 60px;
+    position: relative;
+    margin-top: auto;
+    
+}
+.icone {
+    width: 100px;
+}
+#siteservice{
+   position: relative;
+   bottom: 100px;
+   float: left;
+   padding-left: 10%;
+}
+#softservice{
+   position: relative;
+   bottom:100px;
+   float: right;
+   padding-right: 10%;
+}
+.icone1{
+    width: 80px;
+}
+
+
+
+main{
+display: flex;
+    
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    
+    
+    
+    
+    
+    
+}
+
+  .slider {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+   
+   
+    
+  }
+
+  .card {
+    width: 300px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    background: rgb(64,59,59);
+background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+
+
+  }
+
+  .hidden-card {
+    left: -300px;
+  }
+
+  .main-card {
+    z-index: 10;
+  }
+
+  h1 {
+    font-size: 36px;
+    
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 24px;
+    
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: 16px;
+    
+    margin-top: 20px;
+  }
+
+  button {
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+
+  
+.ghstudiol{
+    width: 200px;
+    height: 150px;
+    float: both;
+}
+
+
+/*design*/
+#quem-somos{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    
+  }
+.cases{
+    background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+    border-radius: 30px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    width: 500px;
+    height: 350px;
+    margin: 20px;
+    padding-bottom: 10px;
+  }
+  .cases h2,p {
+    text-align: center;
+    color: aliceblue;
+  }
+
+  .casesimg{
+    padding: 10px;
+    width: 260px;
+  }
+  .casesimgbanner{
+    padding: 10px;
+    width: 400px;
+  }
+  .casesimgbanner1{
+    padding: 10px;
+    width: 400px;
+    
+  }
+
+
+  .card1 {
+    background: linear-gradient(90deg, rgba(64,59,59,1) 0%, rgba(255,2,2,1) 100%, rgba(0,212,255,1) 100%);
+    width: 500px;
+    height: 350px;
+   
+    perspective: 1000px;
+    display: flex;
+align-items: center;
+margin: 20px;
+padding-bottom: 10px;
+    border-radius: 30px;
+    
+    
+   
+    flex-direction: column-reverse;
+  }
+  
+  .card-content1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    
+  }
+  
+  .card1:hover .card-content1 {
+    transform: rotateY(180deg);
+  }
+  
+  .card-front1, .card-back1 {
+    width: 500px;
+    height: 350px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .card-front1 {
+   
+    line-height: 200px;
+    text-align: center;
+  }
+  
+  .card-back1 {
+   
+    line-height: 200px;
+    text-align: center;
+    transform: rotateY(180deg);
+  }
+  .cartao{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+  }
+
+#rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            bottom: auto;
+            margin-top: 10px;
+        }
+
+        .footer p {
+            text-align: center;
+        }
+        .redes-sociais {
+            width: 30px;
+            margin-top: 30px;
+           }
+
+            /*menu mobile*/
+  .sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+  }
+  
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .openbtn {
+      font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    
+  }
+  
+  #main {
+    transition: margin-right .5s;
+    padding: 16px;
+  }
+
+
+  @media screen and (max-width :1020px)  {
+    .container{
+      width:100%;
+      flex-direction: column;
+    }
+    .slider{
+   
+      margin: auto;
+    }
+    #submenu{
+      width:100%;
+      flex-direction: column;
+      margin: 0px;
+      margin-bottom: 30px;
+      
+    }
+    h1{
+      font-size: 25px;
+      
+    }
+    nav ul {
+      display: none;
+  }
+  #rodape{
+    flex-wrap: wrap;
+  }
+    .openbtn{
+      display: block;
+    }
+    #design{
+      width: 100%;
+      margin: 0px;
+      
+    }
+    #design,img{
+      width: 100%;
+      margin: 0px;
+      
+    }
+  .elementos{
+    margin: 10px;
+  }
+  .rece{
+    display: flex;
+    align-self: center;
+    
+  }
+  #siteservice{
+    margin: auto;
+   
+  }
+  #softservice{
+  
+   text-align: right;
+    margin: auto;
+  }
+
+/*    design  */
+
+    .casesimgbanner1{
+display: none;
+
+
+    }
+    .card1{
+display: none;
+    }
+    .card-content1{
+      display: none;
+    }
+    .cartao{
+      display: none;
+    }
+    button{
+     margin: 0px;
+    }
+    .cases{
+      width: 100%;
+      margin: 25px;
+      padding: 10px;
+    }
+    .casesimgbanner{
+      max-width: 90%;
+    }
+  }
+
+  
+
+ 
