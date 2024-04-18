@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" description" content= "Serviços de uma empresa, pagina principal,gh-studio,servicos-e-produtos,obtenha a logo da sua empresa;sites responsivos;e sistemas altamente tecnologicos" >
+    <link rel="icon" href="img/Logo.jpg" type="img">
+    <title>GH Studio</title>
+    <link rel="stylesheet" href="css/servicos-e-produtos.css"> <!-- Importa o arquivo de estilos -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho de navegação -->
+        <nav>
+            <!-- Logotipo -->
+            <div class="logo"> 
+               <a href="index.html"><span>GH-Studio</span> <!-- Texto do logotipo --></a> 
+            </div>
+<img src="img/Logo.png" alt="" class="logotipo">
+            <!-- Lista de links de navegação -->
+            <ul>
+                <li><a href="quem somos.html">Quem Somos</a></li>
+                <li><a href="servicos-e-produtos.html">Produtos e Serviços</a></li>
+                <li><a href="cases-de-sucesso.html">Cases de Sucesso</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </div>
+     <!-- menu mobile -->
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="quem somos.html"><p1>Quem Somos</p1></a>
+  <a href="servicos-e-produtos.html"><p1>Produtos e Serviços</p1></a>
+  <a href="cases-de-sucesso.html"><p1>Cases de Sucesso</p1></a>
+  <a href="contato.html"><p1>Contato</p1></a>
+  <a href="perguntas-frequentes.html"><p1>Perguntas Frequentes</p1></a>
+</div>
+
+<div id="main">
+  <button class="openbtn" onclick="openNav()">☰</button>  
+</div>
+    <div id="submenu">
+        <h1>Desenvolvimento Web<br>  
+
+  Deixe a GH-Studio cuidar de serviços para você
+</h1>
+   <a href="contato.html"> <button  class="faleconoscobotao" >Fale conosco</button></a>
+</div> 
+<div id="design" class="elementos"><h1>Design</h1><a href="design.html"><img class="icone"  src="img/designlogo.png" alt="" ></a></div>
+<div class="rece">
+    <div id="siteservice" class="elementos"><h1>Criação de sites</h1><img class="icone1"  src="img/siteslogo.png" alt=""onclick="exibirAlerta()"></div>
+    
+    <div id="softservice" class="elementos"><h1>Criação de Soft/Program</h1><img  class="icone1"  src="img/softlogo.png" alt="" onclick="exibirAlerta()"></div>
+  </div>
+    <main>
+<div class="slider">
+  <div class="card main-card">
+      <img src="img/GH Studio.jpg" alt="" class="ghstudiol">
+   
+    
+    <p>Somos uma empresa especializada em design, criação de sites e de programas. Oferecemos soluções criativas e inovadoras para o seu negócio.</p>
+    <button class="next-btn" onclick="nextSlide()">Próximo</button>
+  </div>
+  <div class="card hidden-card">
+    <img src="img/design-ghstudio.png" alt="" class="ghstudiol">
+    <h2>Design</h2>
+    <p>Criamos designs atraentes e funcionais para a sua marca, produto ou serviço. Desenvolvemos logotipos, identidade visual, materiais gráficos, embalagens e muito mais.</p>
+    <button class="prev-btn" onclick="prevSlide()">Anterior</button>
+    <button class="next-btn" onclick="nextSlide()">Próximo</button>
+  </div>
+  <div class="card hidden-card">
+    <img src="img/sites-ghstudio.png" alt="" class="ghstudiol">
+    <h2>Criação de sites</h2>
+    <p>Desenvolvemos sites responsivos, dinâmicos e otimizados para os motores de busca. Utilizamos as melhores tecnologias e ferramentas para criar sites que atendam às suas necessidades e expectativas.</p>
+    <button class="prev-btn" onclick="prevSlide()">Anterior</button>
+    <button class="next-btn" onclick="nextSlide()">Próximo</button>
+  </div>
+  <div class="card hidden-card">
+    <img src="img/systems-ghstudio.png" alt="" class="ghstudiol">
+    <h2>Criação de programas</h2>
+    <p>Programamos aplicativos, sistemas e softwares sob medida para o seu projeto. Usamos linguagens de programação modernas e eficientes para criar soluções personalizadas e de qualidade.</p>
+    <button class="prev-btn" onclick="prevSlide()">Anterior</button>
+  </div>
+</div>
+
+</main> 
+
+<script>
+  
+let cards = document.querySelectorAll(".card");
+let index = 0;
+
+function nextSlide() {
+  
+let currentCard = cards[index];
+let nextCard = cards[index + 1];
+
+currentCard.style.left = "-300px";
+nextCard.style.left = "0";
+
+index++;
+
+}
+
+function prevSlide() {
+
+let currentCard = cards[index];
+let prevCard = cards[index -1];
+
+currentCard.style.left = "300px";
+prevCard.style.left = "0";
+
+index--;
+
+}
+function exibirAlerta() {
+    alert("Em breve");
+  }
+
+  
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+        }
+        
+</script>
+
+
+  
+  
+<div class="footer"> <div id="rodape"><div><img class="logotipo" src="img/GH Studio.jpg" alt=""></div>
+<div>  <h4>Inicio</h4>  
+ <a href="index.html">  home</a>
+         </div> 
+         <div><h4>Sobre-Nós</h4>
+        <a href="quem somos.html"> quem somos<br></a>
+        <a href="design.html"> exemplos de design</a>
+     </div>
+     <div><h4>Suporte</h4>
+         <a href="perguntas-frequentes.html">  duvidas</a><br>
+         <a href="contato.html"> contato</a>
+     </div>
+     <div>
+      <a href="https://wa.me/message/WUAHX3M5OBBUE1" target="_blank">  <img class="redes-sociais" src="img/whatsapp.png" alt=""></a>
+      <a target="_blank" href="https://www.instagram.com/gh_studio_company?igsh=bzNzenBwbTQ3eWJi"><img class="redes-sociais" src="img/instagram.png" alt=""></a>  
+      <a target="_blank" href="https://vm.tiktok.com/ZM6DdwgK9/">  <img class="redes-sociais" src="img/Tiktok.png" alt=""></a>
+      <a target="_blank" href="https://www.facebook.com/profile.php?id=61554840255358&mibextid=ZbWKwL"> <img class="redes-sociais" src="img/facebook.png" alt=""></a>
+        
+    </div>
+     </div>
+         <p>© 2024 GHStudio. Todos os direitos reservados.</p>
+         
+   
+ </div>
+</body>
+
+</html>

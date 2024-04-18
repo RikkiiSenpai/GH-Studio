@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" description" content= "Serviços de uma empresa, pagina principal,gh-studio,gh-studio contato," >
+    <link rel="icon" href="img/Logo.jpg" type="img">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Importa o arquivo de estilos -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho de navegação -->
+        <nav>
+            <!-- Logotipo -->
+            <div class="logo"> 
+               <a href="index.html" ><span>GH-Studio</span> </a> <!-- Texto do logotipo -->
+            </div>
+<img src="img/Logo.png" alt="" class="logotipo">
+            <!-- Lista de links de navegação -->
+            <ul>
+                <li><a href="quem somos.html">Quem Somos</a></li>
+                <li><a href="servicos-e-produtos.html">Produtos e Serviços</a></li>
+                <li><a href="cases-de-sucesso.html">Cases de Sucesso</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </div>
+     <!-- menu mobile -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="quem somos.html"><p1>Quem Somos</p1></a>
+    <a href="servicos-e-produtos.html"><p1>Produtos e Serviços</p1></a>
+    <a href="cases-de-sucesso.html"><p1>Cases de Sucesso</p1></a>
+    <a href="contato.html"><p1>Contato</p1></a>
+    <a href="perguntas-frequentes.html"><p1>Perguntas Frequentes</p1></a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+   <div id="logop">
+  
+        <img class=" logop" src="img/GH Studio.jpg" alt="">
+    </div>
+  <div id="redghostv"><img id="redghost" src="img/red ghost.png" alt=""></div>  
+    <div id="pf">
+        <div id="form">
+        <h1>Formulário de Contato</h1>
+        <form action="mailto:ghstudiocompany@gmail.com" method="post" enctype="text/plain">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email"><br>
+            <label for="servico">Escolha um serviço:</label><br>
+            <select id="servico" name="servico">
+                <option value="design">Design</option>
+                <option value="criacao-de-site">Criação de Site</option>
+                <option value="sistemas">Sistemas</option>
+            </select><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+    </div>
+
+        
+
+    
+    
+  
+<div class="footer"> <div id="rodape"><div><img class="logotipo" src="img/GH Studio.jpg" alt=""></div>
+<div>  <h4>Inicio</h4>  
+ <a href="index.html">  home</a>
+         </div> 
+         <div><h4>Sobre-Nós</h4>
+        <a href="quem somos.html"> quem somos<br></a>
+        <a href="design.html"> exemplos de design</a>
+     </div>
+     <div><h4>Suporte</h4>
+         <a href="perguntas-frequentes.html">  duvidas</a><br>
+         <a href="contato.html"> contato</a>
+     </div>
+     <div>
+        <a href="https://wa.me/message/WUAHX3M5OBBUE1" target="_blank">  <img class="redes-sociais" src="img/whatsapp.png" alt=""></a>
+        <a target="_blank" href="https://www.instagram.com/gh_studio_company?igsh=bzNzenBwbTQ3eWJi"><img class="redes-sociais" src="img/instagram.png" alt=""></a>  
+        <a target="_blank" href="https://vm.tiktok.com/ZM6DdwgK9/">  <img class="redes-sociais" src="img/Tiktok.png" alt=""></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61554840255358&mibextid=ZbWKwL"> <img class="redes-sociais" src="img/facebook.png" alt=""></a>
+          
+      </div>
+     </div>
+         <p>© 2024 GHStudio. Todos os direitos reservados.</p>
+         
+   
+ </div>
+ <script>
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "250px";
+      document.getElementById("main").style.marginRight = "250px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.getElementById("main").style.marginRight= "0";
+    }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name=" description" content= "Serviços de uma empresa, pagina principal,gh-studio,´perguntas frequentes" >
+    <link rel="icon" href="img/Logo.jpg" type="img">
+    <title>Perguntas Frequentes</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Importa o arquivo de estilos -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Cabeçalho de navegação -->
+        <nav>
+            <!-- Logotipo -->
+            <div class="logo"> 
+               <a href="index.html" ><span>GH-Studio</span> </a> <!-- Texto do logotipo -->
+            </div>
+<img src="img/Logo.png" alt="" class="logotipo">
+            <!-- Lista de links de navegação -->
+            <ul>
+                <li><a href="quem somos.html">Quem Somos</a></li>
+                <li><a href="servicos-e-produtos.html">Produtos e Serviços</a></li>
+                <li><a href="cases-de-sucesso.html">Cases de Sucesso</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="perguntas-frequentes.html">Perguntas Frequentes</a></li>
+            </ul>
+        </nav>
+    </div>
+     <!-- menu mobile -->
+<div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="quem somos.html"><p1>Quem Somos</p1></a>
+    <a href="servicos-e-produtos.html"><p1>Produtos e Serviços</p1></a>
+    <a href="cases-de-sucesso.html"><p1>Cases de Sucesso</p1></a>
+    <a href="contato.html"><p1>Contato</p1></a>
+    <a href="perguntas-frequentes.html"><p1>Perguntas Frequentes</p1></a>
+  </div>
+  
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">☰</button>  
+  </div>
+   <div id="logop">
+  
+        <img class=" logop" src="img/GH Studio.jpg" alt="">
+    </div>
+  <div id="redghostv"><img id="redghost" src="img/red ghost.png" alt=""></div>  
+    <div id="pf">
+    <div id="pr">
+        <h1>Perguntas Frequentes</h1>
+        <div class="faq-question"><h2>Vocês oferecem serviços de design responsivo?</h2> </div>
+        <div class="faq-answer"><p1>Sim, todos os nossos sites são projetados para serem responsivos e funcionar bem em uma variedade de dispositivos e tamanhos de tela.</p1></div>
+        <div class="faq-question"><h2>Vocês oferecem treinamento ou suporte para gerenciar o site após a criação?</h2></div>
+        <div class="faq-answer"><p1>Sim, oferecemos treinamento e suporte para ajudá-lo a gerenciar seu site após a conclusão do projeto.</p1></div>
+        <div class="faq-question"><h2>Quanto tempo leva para criar um site?</h2></div>
+        <div class="faq-answer"><p1>O tempo necessário para criar um site depende da complexidade do projeto, mas geralmente leva de 4 a 6 semanas.</p1></div>
+        <div class="faq-question"><h2>Quais serviços de design vocês oferecem?</h2></div>
+        <div class="faq-answer"><p1>Oferecemos uma variedade de serviços de design, incluindo design gráfico, design de sites, design de logotipos e muito mais.</p1></div>
+    </div>
+    </div>
+
+        <!-- Adicione mais perguntas e respostas conforme necessário -->
+    
+        <script>
+            var faqQuestions = document.getElementsByClassName('faq-question');
+            for (var i = 0; i < faqQuestions.length; i++) {
+                faqQuestions[i].addEventListener('click', function() {
+                    this.nextElementSibling.style.display = 
+                        this.nextElementSibling.style.display == 'block' ? 'none' : 'block';
+                });
+            }
+
+            
+        function openNav() {
+          document.getElementById("mySidebar").style.width = "250px";
+          document.getElementById("main").style.marginRight = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidebar").style.width = "0";
+          document.getElementById("main").style.marginRight= "0";
+        }
+        
+        </script>
+
+    
+    
+  
+<div class="footer"> <div id="rodape"><div><img class="logotipo" src="img/GH Studio.jpg" alt=""></div>
+<div>  <h4>Inicio</h4>  
+ <a href="index.html">  home</a>
+         </div> 
+         <div><h4>Sobre-Nós</h4>
+        <a href="quem somos.html"> quem somos<br></a>
+        <a href="design.html"> exemplos de design</a>
+     </div>
+     <div><h4>Suporte</h4>
+         <a href="perguntas-frequentes.html">  duvidas</a><br>
+         <a href="contato.html"> contato</a>
+     </div>
+     <div>
+        <a href="https://wa.me/message/WUAHX3M5OBBUE1" target="_blank">  <img class="redes-sociais" src="img/whatsapp.png" alt=""></a>
+        <a target="_blank" href="https://www.instagram.com/gh_studio_company?igsh=bzNzenBwbTQ3eWJi"><img class="redes-sociais" src="img/instagram.png" alt=""></a>  
+        <a target="_blank" href="https://vm.tiktok.com/ZM6DdwgK9/">  <img class="redes-sociais" src="img/Tiktok.png" alt=""></a>
+        <a target="_blank" href="https://www.facebook.com/profile.php?id=61554840255358&mibextid=ZbWKwL"> <img class="redes-sociais" src="img/facebook.png" alt=""></a>
+          
+      </div>
+     </div>
+         <p>© 2024 GHStudio. Todos os direitos reservados.</p>
+         
+   
+ </div>
+</body>
+
+</html>
